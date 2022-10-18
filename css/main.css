@@ -76,7 +76,7 @@ body {
 }
 
 .homePage {
-  background: url("../Assets/MainBG.jpg") no-repeat center center/cover;
+  background-image: url(../Assets/MainBG.jpg);
   height: 100vh;
 }
 .homePage .mainContent {
@@ -96,7 +96,7 @@ body {
   font-size: 30px;
 }
 .homePage .mainContent .headingContainer .titleHeading {
-  background-image: url("../Assets/headingBG.jpg");
+  background-image: url(../Assets/headingBG.jpg);
   background-repeat: repeat;
   -webkit-background-clip: text;
           background-clip: text;
@@ -113,6 +113,8 @@ body {
   opacity: 0.8;
   width: 80%;
   max-width: 600px;
+  line-height: 25px;
+  text-align: center;
 }
 .homePage .mainContent .date {
   color: #272A31;
@@ -121,7 +123,7 @@ body {
 }
 
 .programSection .program {
-  background: url("../Assets/peachBG.jpg") no-repeat center center/cover;
+  background-image: url(../Assets/peachBG.jpg);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -213,11 +215,10 @@ body {
 }
 
 .aboutPage {
-  background: url("../Assets/MainBG.jpg") no-repeat center center/cover;
+  background-image: url(../Assets/MainBG.jpg);
   height: 100vh;
 }
 .aboutPage .mainContent {
-  padding-top: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -227,13 +228,14 @@ body {
 }
 .aboutPage .mainContent .headingContainer {
   max-width: 500px;
+  padding-top: 25px;
 }
 .aboutPage .mainContent .headingContainer .greetingHeading {
   color: #EC5242;
   font-size: 30px;
 }
 .aboutPage .mainContent .headingContainer .titleHeading {
-  background-image: url("../Assets/headingBG.jpg");
+  background-image: url(../Assets/headingBG.jpg);
   background-repeat: repeat;
   -webkit-background-clip: text;
           background-clip: text;
@@ -250,16 +252,53 @@ body {
   opacity: 0.7;
   width: 80%;
   max-width: 900px;
-  padding: 2%;
   text-align: center;
   color: #272A31;
   font-size: 15px;
   font-weight: 400;
+  line-height: 25px;
 }
-.aboutPage .mainContent .date {
+.aboutPage .mainContent .contactHeading {
   color: #272A31;
-  font-size: 30px;
-  font-weight: 800;
+  font-size: 15px;
+  line-height: 25px;
+}
+.aboutPage .mainContent .contactHeading p {
+  text-align: center;
+}
+.aboutPage .mainContent .contactHeading p a {
+  color: #272A31;
+  text-decoration: none;
+}
+
+.logoSection .logoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.logoSection .logoContainer .logoHeading {
+  color: #272A31;
+}
+.logoSection .logoContainer .logoLine {
+  border: 0.5px solid #EC5242;
+  width: 25px;
+  margin: 0 auto;
+}
+.logoSection .logoContainer .logoDescription {
+  color: #272A31;
+  font-size: 15px;
+  line-height: 25px;
+}
+.logoSection .logoContainer .logoImage {
+  width: 320px;
+  height: 150px;
+  max-width: 500px;
+  border: 0.5px solid #272A31;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
