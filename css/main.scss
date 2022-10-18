@@ -1,0 +1,208 @@
+$greyish: #272A31;
+$orangish: #EC5242;
+$lightGrey :#D3D3D3;
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.desktop{
+    display: none;
+}
+.navBar{
+    position: sticky;
+    top:0;
+    z-index: 1;
+        .topNavBar{
+            display: none;
+        }
+        .bottomNavBar{
+            display: none;
+         }
+        .mobileView{
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 50px;
+            .fa-bars{
+                display: block;
+                cursor: pointer;
+                margin-left: 30px;
+                margin-top: 10px;                
+                font-size: 35px;
+                color: $greyish;
+                    
+            }
+    
+            .mobilemenu {
+                display: none;
+                flex-direction: column;
+                // height: 80vh;
+                width: 100%;
+                background-color: $lightGrey;
+                opacity: 0.9;
+                position: fixed;
+                                
+                                
+            
+                .fa-times{
+                    color: #fff;
+                    font-size: 30px;
+                    right: 0;
+                    margin-left: 85%;
+                    margin-top: 5%;
+                    i:hover {
+                        cursor: pointer;
+                    }
+                }
+                .mobile-menu-items{
+                    color: $greyish;
+                    font-weight: 600;
+                    font-size: 32px;
+                    line-height: 44px;
+                    margin-left: 10%;
+                    margin-top: 5%;
+                    
+                    
+                }
+            }
+        }
+    
+}
+
+.homePage{
+    background: url(/Assets/MainBG.jpg) no-repeat center center/cover;
+    height: 100vh;
+    width: 100vw;
+    
+    
+    .mainContent{
+        
+        padding-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 50px;
+        
+        .headingContainer{
+            .greetingHeading{
+                color:$orangish;
+                font-size: 30px;
+            }
+            .titleHeading{   
+                background-image: url(/Assets/headingBG.jpg);
+                background-repeat: repeat;         
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-family: 'Lato', sans-serif;
+                background-size: cover;
+                font-weight: 800;
+                background-position-y: center;
+                font-size: 4rem;
+            }
+
+        }
+        .mainDescription{
+            border: #D3D3D3 2px solid;
+            background: #D3D3D3;
+            opacity: 0.8;
+            max-width: 600px;
+            
+        }
+    }
+}
+@media screen and (min-width: 768px){
+    .desktop{
+        display: block;
+    }
+    .mobile{
+        display: none;
+    }
+    .navBar{
+        .mobileView{
+            display: none;
+        }
+        .topNavBar{
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            height: 30px;
+            background-color: $greyish;
+            
+            .topNavList{
+                margin-right: 30px;
+                margin-top: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 300px;
+                list-style: none;
+                
+                .topNavItem{
+                    text-decoration: none;
+                    color: $greyish;
+                    font-size: 15px;
+                    font-weight: 200;
+                    color: #D3D3D3;
+                    text-align: center;
+                    &:hover{
+                        color: $orangish;
+                    }
+                }
+            }
+        }
+        .bottomNavBar{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 5%;
+            padding-right: 5%;
+            background-color: white;
+            height: 50px;
+            .bottomNavList{
+                gap: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                list-style: none;
+                .bottomNavItem{
+                    .navLinks{
+                        text-decoration: none;
+                        color: $greyish;
+                        font-size: 15px;
+                        font-weight: 200;
+                        text-align: center;
+                        &:hover{
+                         color: $orangish;
+                        }
+                    }
+                }
+            
+
+            }
+           .voucher{
+                border: #EC5242 3px solid;
+                 color: #EC5242;
+            
+                a{
+                    text-decoration: none;
+                    color: #EC5242;
+                    font-size: 16px;
+                }
+            
+            }
+        }
+    }
+    
+    .homePage{
+        .mainContent{
+            margin-left: 5%;
+        }
+    }
+}

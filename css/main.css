@@ -1,0 +1,180 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.desktop {
+  display: none;
+}
+
+.navBar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.navBar .topNavBar {
+  display: none;
+}
+.navBar .bottomNavBar {
+  display: none;
+}
+.navBar .mobileView {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+}
+.navBar .mobileView .fa-bars {
+  display: block;
+  cursor: pointer;
+  margin-left: 30px;
+  margin-top: 10px;
+  font-size: 35px;
+  color: #272A31;
+}
+.navBar .mobileView .mobilemenu {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  background-color: #D3D3D3;
+  opacity: 0.9;
+  position: fixed;
+}
+.navBar .mobileView .mobilemenu .fa-times {
+  color: #fff;
+  font-size: 30px;
+  right: 0;
+  margin-left: 85%;
+  margin-top: 5%;
+}
+.navBar .mobileView .mobilemenu .fa-times i:hover {
+  cursor: pointer;
+}
+.navBar .mobileView .mobilemenu .mobile-menu-items {
+  color: #272A31;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+
+.homePage {
+  background: url(/Assets/MainBG.jpg) no-repeat center center/cover;
+  height: 100vh;
+  width: 100vw;
+}
+.homePage .mainContent {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 50px;
+}
+.homePage .mainContent .headingContainer .greetingHeading {
+  color: #EC5242;
+  font-size: 30px;
+}
+.homePage .mainContent .headingContainer .titleHeading {
+  background-image: url(/Assets/headingBG.jpg);
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Lato", sans-serif;
+  background-size: cover;
+  font-weight: 800;
+  background-position-y: center;
+  font-size: 4rem;
+}
+.homePage .mainContent .mainDescription {
+  border: #D3D3D3 2px solid;
+  background: #D3D3D3;
+  opacity: 0.8;
+  max-width: 600px;
+}
+
+@media screen and (min-width: 768px) {
+  .desktop {
+    display: block;
+  }
+  .mobile {
+    display: none;
+  }
+  .navBar .mobileView {
+    display: none;
+  }
+  .navBar .topNavBar {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 30px;
+    background-color: #272A31;
+  }
+  .navBar .topNavBar .topNavList {
+    margin-right: 30px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    list-style: none;
+  }
+  .navBar .topNavBar .topNavList .topNavItem {
+    text-decoration: none;
+    color: #272A31;
+    font-size: 15px;
+    font-weight: 200;
+    color: #D3D3D3;
+    text-align: center;
+  }
+  .navBar .topNavBar .topNavList .topNavItem:hover {
+    color: #EC5242;
+  }
+  .navBar .bottomNavBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: white;
+    height: 50px;
+  }
+  .navBar .bottomNavBar .bottomNavList {
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+  }
+  .navBar .bottomNavBar .bottomNavList .bottomNavItem .navLinks {
+    text-decoration: none;
+    color: #272A31;
+    font-size: 15px;
+    font-weight: 200;
+    text-align: center;
+  }
+  .navBar .bottomNavBar .bottomNavList .bottomNavItem .navLinks:hover {
+    color: #EC5242;
+  }
+  .navBar .bottomNavBar .voucher {
+    border: #EC5242 3px solid;
+    color: #EC5242;
+  }
+  .navBar .bottomNavBar .voucher a {
+    text-decoration: none;
+    color: #EC5242;
+    font-size: 16px;
+  }
+  .homePage .mainContent {
+    margin-left: 5%;
+  }
+}/*# sourceMappingURL=main.css.map */
