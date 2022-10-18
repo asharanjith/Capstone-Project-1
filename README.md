@@ -1,7 +1,7 @@
 # First-Capstone-Project
 
 
-This is the first capstone project to be created. The design is similar to that of the 
+This is the first capstone project to be created. The design is similar to that of  
 [Cindy-Shin-in-Behance](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
 
 ##- Major languages: HTML, CSS, JavaScript
@@ -28,7 +28,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
+- Design by [Cindy-Shin-in-Behance](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
 - Inspiration 
 - etc
 

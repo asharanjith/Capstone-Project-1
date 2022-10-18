@@ -16,17 +16,17 @@ function closeMenuBox() {
 }
 closeMobileMenu.addEventListener('click', closeMenuBox);
 
-// const homePage = document.querySelector('.home-page');
+// const aboutPage = document.querySelector('.about-page');
 // const programSection = document.querySelector('.program-section');
 // const speakerSection = document.querySelector('.speaker-section');
 // const sponsorSection = document.querySelector('.sponsor-section');
 // const newsSection=  document.querySelector('.news-section');
 
-// function goTohomePage() {
+// function goToaboutPage() {
 //   closeMenuBox();
-//   window.location = '.homePage';
+//   window.location = '.aboutPage';
 // }
-// homePage.addEventListener('click', goTohomePage);
+// aboutPage.addEventListener('click', goToaboutPage);
 
 // function goToprogramSection() {
 //   closeMenuBox();

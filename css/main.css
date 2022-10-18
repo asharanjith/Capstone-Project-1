@@ -25,11 +25,10 @@ body {
   display: none;
 }
 .navBar .mobileView {
-  background-color: white;
+  background-color: #f4d7d4;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 50px;
 }
 .navBar .mobileView .fa-bars {
   display: block;
@@ -42,15 +41,15 @@ body {
 .navBar .mobileView .mobilemenu {
   display: none;
   flex-direction: column;
-  width: 100%;
+  width: 60%;
   background-color: #D3D3D3;
   opacity: 0.9;
   position: fixed;
+  top: 0;
 }
 .navBar .mobileView .mobilemenu .fa-times {
-  color: #fff;
+  color: #272A31;
   font-size: 30px;
-  right: 0;
   margin-left: 85%;
   margin-top: 5%;
 }
@@ -58,12 +57,17 @@ body {
   cursor: pointer;
 }
 .navBar .mobileView .mobilemenu .mobile-menu-items {
-  color: #272A31;
+  color: #EC5242;
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
   margin-left: 10%;
   margin-top: 5%;
+  text-decoration: none;
+}
+.navBar .mobileView .mobilemenu .mobile-menu-items:hover {
+  color: #272A31;
+  cursor: pointer;
 }
 
 .homePage {
