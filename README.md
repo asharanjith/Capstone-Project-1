@@ -2,7 +2,7 @@
 
 
 This is the first capstone project to be created. The design is similar to that of the 
-[Cindy-Shin-in-Behance]https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
+[Cindy-Shin-in-Behance](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
 
 ##- Major languages: HTML, CSS, JavaScript
 
