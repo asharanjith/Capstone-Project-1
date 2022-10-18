@@ -12,6 +12,11 @@ body {
   display: none;
 }
 
+.about {
+  align-items: center;
+  justify-content: center;
+}
+
 .navBar {
   position: -webkit-sticky;
   position: sticky;
@@ -82,6 +87,9 @@ body {
   justify-content: flex-start;
   gap: 50px;
   margin-left: 7%;
+}
+.homePage .mainContent .headingContainer {
+  max-width: 500px;
 }
 .homePage .mainContent .headingContainer .greetingHeading {
   color: #EC5242;
@@ -188,6 +196,70 @@ body {
 }
 .partnerSection .partnerContainer .partnerList .partnerItem {
   align-self: center;
+}
+
+.footer {
+  background-color: #f5b9b2;
+  height: 150px;
+}
+.footer .footerContainer {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer .footerContainer .footerCopyright {
+  color: #272A31;
+}
+
+.aboutPage {
+  background: url(/Assets/MainBG.jpg) no-repeat center center/cover;
+  height: 100vh;
+}
+.aboutPage .mainContent {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-left: 7%;
+}
+.aboutPage .mainContent .headingContainer {
+  max-width: 500px;
+}
+.aboutPage .mainContent .headingContainer .greetingHeading {
+  color: #EC5242;
+  font-size: 30px;
+}
+.aboutPage .mainContent .headingContainer .titleHeading {
+  background-image: url(/Assets/headingBG.jpg);
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Lato", sans-serif;
+  background-size: cover;
+  font-weight: 800;
+  background-position-y: center;
+  font-size: 4rem;
+}
+.aboutPage .mainContent .mainDescription {
+  border: #D3D3D3 2px solid;
+  background: #D3D3D3;
+  opacity: 0.7;
+  width: 80%;
+  max-width: 900px;
+  padding: 2%;
+  text-align: center;
+  color: #272A31;
+  font-size: 15px;
+  font-weight: 400;
+}
+.aboutPage .mainContent .date {
+  color: #272A31;
+  font-size: 30px;
+  font-weight: 800;
 }
 
 @media screen and (min-width: 768px) {
