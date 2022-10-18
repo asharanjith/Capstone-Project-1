@@ -297,8 +297,15 @@ body {
   border: 0.5px solid #272A31;
   margin: 10px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.logoSection .logoContainer .logoImage p {
+  color: #272A31;
+  font-size: 12px;
+  line-height: 25px;
+  text-decoration: overline underline;
 }
 
 @media screen and (min-width: 768px) {

@@ -330,8 +330,15 @@ body{
             border: 0.5px solid $greyish;
             margin: 10px;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
+            p{
+                color:$greyish;
+                font-size: 12px;
+                line-height: 25px;
+                text-decoration: overline underline;                
+            }
             
         }
     }
