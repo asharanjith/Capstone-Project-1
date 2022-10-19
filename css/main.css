@@ -199,9 +199,13 @@ body {
 .partnerSection .partnerContainer .partnerList .partnerItem {
   align-self: center;
 }
+.partnerSection .partnerContainer .partnerList .partnerItem img {
+  width: 180px;
+  height: 120px;
+  color: #272A31;
+}
 
 .footer {
-  background-color: #f7d7d3;
   height: 150px;
 }
 .footer .footerContainer {
@@ -209,6 +213,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.footer .footerContainer .footerLogo img {
+  width: 120px;
+  height: 120px;
 }
 .footer .footerContainer .footerCopyright {
   color: #272A31;
@@ -271,9 +279,6 @@ body {
   text-decoration: none;
 }
 
-.logoSection {
-  background: #f7d7d3;
-}
 .logoSection .logoContainer {
   display: flex;
   flex-direction: column;
@@ -292,10 +297,12 @@ body {
   color: #272A31;
   font-size: 15px;
   line-height: 25px;
+  max-width: 500px;
+  text-align: center;
 }
 .logoSection .logoContainer .logoImage {
   width: 320px;
-  height: 150px;
+  height: 200px;
   max-width: 500px;
   border: 0.5px solid #272A31;
   margin: 10px;
@@ -303,6 +310,14 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.logoSection .logoContainer .logoImage img {
+  height: 170px;
+  width: 170px;
+}
+.logoSection .logoContainer .logoImage :hover {
+  scale: 2;
+  transition: all 0.3s ease-in-out;
 }
 .logoSection .logoContainer .logoImage p {
   color: #272A31;
@@ -341,6 +356,11 @@ body {
   justify-content: center;
   width: 100%;
   margin-bottom: 3%;
+}
+.pastEvent .pastEventContent .pastEventContainer :hover {
+  cursor: pointer;
+  scale: 1.2;
+  transition: all 0.3s ease-in-out;
 }
 .pastEvent .pastEventContent .pastEventContainer .pastEventImage1 {
   height: 200px;
@@ -425,7 +445,15 @@ body {
     padding-left: 5%;
     padding-right: 5%;
     background-color: white;
-    height: 50px;
+    height: 70px;
+  }
+  .navBar .bottomNavBar a img {
+    height: 60px;
+    width: 60px;
+  }
+  .navBar .bottomNavBar a :hover {
+    scale: 2;
+    transition: all 0.3s ease-in-out;
   }
   .navBar .bottomNavBar .bottomNavList {
     gap: 30px;
@@ -456,12 +484,18 @@ body {
   .programSection .program .programContainer {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
   }
   .programSection .program .programContainer .programItem {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
+  }
+  .programSection .program .programContainer .programItem img {
+    height: 40px;
+    opacity: 0.7;
   }
   .programSection .program .joinLink {
     color: #EC5242;
