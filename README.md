@@ -30,6 +30,7 @@ Give a ⭐️ if you like this project!
 
 - Design by [Cindy-Shin-in-Behance](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
 - Inspiration 
+- [Image by asylab](https://www.freepik.com/free-psd/logo-mockup-front-3d-gold-marble_17998312.htm#query=logo&position=8&from_view=keyword")
 - etc
 
 ## 📝 License

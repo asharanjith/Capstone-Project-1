@@ -166,6 +166,10 @@ body{
                 align-items: center;
                 padding: 2%;
                 color: $greyish;
+                img{
+                    height:40px;
+                    opacity: 0.7;
+                }
             }
         }
         .joinButton{
@@ -196,14 +200,14 @@ body{
 .partnerSection{
     // height: 180px;
     .partnerContainer{
-        background-color: #fca59c;
+        background-color: $lightGrey;
         h4{
             color: $greyish;
             font-size: 30px;
             font-weight: 800;
             text-align: center;
             // padding-top: 10%;  
-            background-color: #fca59c;          
+            background-color: $lightGrey transparent;          
         }
         .line{
             border: 0.5px solid $orangish;
@@ -216,12 +220,16 @@ body{
                 flex-direction: row;
                 align-items: center;
                 justify-content: center;
-                background-color: #fca59c;
+                background-color: $lightGrey transparent;
+                opacity: 0.5;
+                gap:20px;
+                margin-top: 10px;
+                flex-wrap: wrap;
             .partnerItem{
                 align-self: center;
                 img{
-                    width:180px;
-                    height:120px;
+                    width:150px;
+                    height:100px;
                     color:#272A31;
 
                 }
@@ -545,11 +553,7 @@ body{
                     align-items: center;
                     justify-content: center;
                     text-align: center;
-                    img{
-                        height: 40px;
-                        opacity: 0.7;
-                    }
-
+                   
                 }
                 
             }
