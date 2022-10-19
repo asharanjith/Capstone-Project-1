@@ -47,8 +47,6 @@ let num=2;
 if(x>768){
     num=6;
 }
-
-
 for(let i=0;i<num;i+=1){
    speakerSection.innerHTML += `
    <div class="speaker">        
@@ -62,3 +60,46 @@ for(let i=0;i<num;i+=1){
     </div>   
    `
 }
+
+button.addEventListener('click',()=>{
+    num+=4;
+    if(num>6){
+        num=6;
+    }
+    speakerSection.innerHTML='';
+    for(let i=0;i<num;i+=1){
+        speakerSection.innerHTML += `
+        <div class="speaker">        
+             <img src="${speakerArray[i].image}" alt="speaker1">
+             <div class="speakerInfo">
+                 <h3>${speakerArray[i].name}</h3>
+                 <p class="position">${speakerArray[i].title}</p>
+                 <p>${speakerArray[i].text}</p>
+             </div>      
+             
+         </div>   
+        `
+     }
+     if(num===6){         
+         button.innerHTML='Less<i class="fas fa-chevron-up"></i>';
+         button.addEventListener('click', ()=>{
+             num=2;
+             speakerSection.innerHTML='';
+             for(let i=0;i<num;i+=1){
+                speakerSection.innerHTML += `
+                <div class="speaker">        
+                     <img src="${speakerArray[i].image}" alt="speaker1">
+                     <div class="speakerInfo">
+                         <h3>${speakerArray[i].name}</h3>
+                         <p class="position">${speakerArray[i].title}</p>
+                         <p>${speakerArray[i].text}</p>
+                     </div>      
+                     
+                 </div>   
+                `
+             }
+             button.innerHTML='More<i class="fas fa-chevron-down"></i>';
+             
+         });
+     }
+});
