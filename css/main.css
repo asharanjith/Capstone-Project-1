@@ -211,6 +211,7 @@ body {
   width: 150px;
   height: 100px;
   color: #272A31;
+  margin-bottom: 10px;
 }
 
 .footer {
@@ -413,6 +414,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .speakerSection h2 {
   color: #272A31;
@@ -424,25 +426,26 @@ body {
 .speakerSection .line {
   border: 0.5px solid #EC5242;
   width: 25px;
-  margin: 0px 10px 10px 10px;
+  margin: 10px;
 }
 .speakerSection #jsSection {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
+  gap: 50px;
 }
 .speakerSection #jsSection .speaker {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-items: center;
-  width: 40%;
 }
 .speakerSection #jsSection .speaker img {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   margin: 10px;
+  box-shadow: 5px 10px #EC5242;
 }
 .speakerSection #jsSection .speaker .speakerInfo {
   display: flex;
@@ -450,8 +453,46 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
-  width: 200px;
-  text-align: center;
+  max-width: 400px;
+  text-align: left;
+  color: #272A31;
+}
+.speakerSection #jsSection .speaker .speakerInfo h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+.speakerSection #jsSection .speaker .speakerInfo .position {
+  color: #EC5242;
+  font-size: 15px;
+  font-weight: 600;
+}
+.speakerSection button {
+  background: #EC5242;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.speakerSection button :hover {
+  background: #EC5242;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  scale: 1.2;
+  transition: all 0.3s ease-in-out;
+}
+.speakerSection button i {
+  margin-left: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -568,5 +609,10 @@ body {
     width: 40%;
     height: 300px;
     background-position-y: -100px;
+  }
+  .speakerSection #jsSection {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
 }/*# sourceMappingURL=main.css.map */
