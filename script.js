@@ -39,3 +39,5 @@ closeMobileMenu.addEventListener('click', closeMenuBox);
 //   window.location = '.speakerSection';
 // }
 // speakerSection.addEventListener('click', goTospeakerSection);
+
+

@@ -449,6 +449,55 @@ body{
         }
     }
 }
+
+.speakerSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    h2{
+        color: #272A31;
+        font-size: 25px;
+        line-height: 25px;
+        margin: 10px 0 0 0;
+        text-align: center;
+    }
+    .line{
+        border: 0.5px solid $orangish;
+        width: 25px;
+        margin: 0px 10px 10px 10px;
+        
+    }
+    #jsSection{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .speaker{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-items: center;
+            width:40%;           
+            
+                img{
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 50%;
+                    margin: 10px;
+                }
+                .speakerInfo{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    flex-wrap: wrap;
+                    width:200px;
+                    text-align: center;
+                }
+        }   
+    }
+}
 @media screen and (min-width: 768px){
     .desktop{
         display: block;
