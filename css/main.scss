@@ -55,7 +55,6 @@ body{
                 .fa-times{
                     color:$greyish;
                     font-size: 30px;
-                    // right: 0;
                     margin-left: 85%;
                     margin-top: 5%;
                     i:hover {
@@ -84,26 +83,19 @@ body{
 .homePage{
     background-image: url(../Assets/MainBG.jpg);
     height: 100vh;
-    // width: 100vw; remove horizontal scroll
-    
-    
-    
-    .mainContent{
-        
+    .mainContent{        
         padding-top: 40px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
         gap: 50px;
-        margin-left: 7%;
-        
+        margin-left: 7%;        
         .headingContainer{
             max-width: 500px;
             .greetingHeading{
                 color:$orangish;
-                font-size: 30px;
-                
+                font-size: 30px;                
             }
             .titleHeading{   
                 background-image: url(../Assets/headingBG.jpg);
@@ -116,17 +108,15 @@ body{
                 background-position-y: center;
                 font-size: 4rem;
             }
-
         }
         .mainDescription{
-            border: #D3D3D3 2px solid;
-            background: #D3D3D3;
+            border: $lightGrey 2px solid;
+            background: $lightGrey;
             opacity: 0.8;
             width: 80%;
             max-width: 600px;
             line-height: 25px;
-            text-align: center;
-            
+            text-align: center;            
         }
         .date{
             color: $greyish;
@@ -136,8 +126,7 @@ body{
     }
 }
 .programSection{
-    .program{
-        
+    .program{        
         background-image: url(../Assets/peachBG.jpg);
         display: flex;
         align-items: center;
@@ -158,6 +147,10 @@ body{
         .programContainer{
             display: flex;
             flex-direction: column;
+            :hover{
+                scale: 1.2;
+                transition: all 0.5s ease-in-out;
+            }
             .programItem{
                 display: grid;
                 grid-template-columns: 1fr 1fr 2fr;
@@ -166,14 +159,15 @@ body{
                 align-items: center;
                 padding: 2%;
                 color: $greyish;
+                max-width:220px;
+                height:150px;                
                 img{
                     height:40px;
                     opacity: 0.7;
                 }
             }
         }
-        .joinButton{
-            
+        .joinButton{            
             background-color: $orangish;
             color:$greyish;
             text-align: center;
@@ -181,39 +175,33 @@ body{
             font-weight: 600;
             padding: 20px;
             margin: 10px;
-            border: 1px solid transparent;
-           
+            border: 1px solid transparent;           
             cursor: pointer;
             &:hover{
-                background-color: #EC5242;
-                color: #272A31;
+                background-color: $orangish;
+                color: $greyish;
             }
             a{
                 text-decoration: none;
                 color:$greyish;
-            }
-
-            
+            }            
         }
     }
 }
 .partnerSection{
-    // height: 180px;
     .partnerContainer{
         background-color: $lightGrey;
         h4{
             color: $greyish;
             font-size: 30px;
             font-weight: 800;
-            text-align: center;
-            // padding-top: 10%;  
+            text-align: center;              
             background-color: $lightGrey transparent;          
         }
         .line{
             border: 0.5px solid $orangish;
             width: 3%;
-            margin: 0 auto;
-            
+            margin: 0 auto;            
         }
         .partnerList{
             display: flex;
@@ -230,18 +218,15 @@ body{
                 img{
                     width:150px;
                     height:100px;
-                    color:#272A31;
-                    margin-bottom: 10px;;
-
+                    color:$greyish;
+                    margin-bottom: 10px;
                 }
             }
         }
     }
 }
-.footer{
-    // background-color:#f7d7d3;
-    height: 150px;
-    
+.footer{    
+    height: 150px;    
     .footerContainer{
         padding: 30px;
         display: flex;
@@ -250,8 +235,7 @@ body{
         .footerLogo{
             img{
                 width: 120px;
-                height: 120px;
-                
+                height: 120px;                
             }
         }
         .footerCopyright{
@@ -261,25 +245,20 @@ body{
 }
 .aboutPage{
     background-image: url(../Assets/MainBG.jpg) ;
-    height: 100vh;
-       
-    
-    .mainContent{ 
-        
+    height: 100vh;    
+    .mainContent{        
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 50px;
-        margin-left: 7%;
-        
+        margin-left: 7%;        
         .headingContainer{
             max-width: 500px;
             padding-top: 25px;
             .greetingHeading{
                 color:$orangish;
-                font-size: 30px;
-                
+                font-size: 30px;                
             }
             .titleHeading{   
                 background-image: url(../Assets/headingBG.jpg);
@@ -295,43 +274,40 @@ body{
 
         }
         .mainDescription{
-            border: #D3D3D3 2px solid;
-            background: #D3D3D3;
+            border: $lightGrey 2px solid;
+            background: $lightGrey;
             opacity: 0.7;
             width: 80%;
-            max-width: 900px;
-            // padding:2%;
+            max-width: 900px;           
             text-align: center;
-            color: #272A31;
+            color: $greyish;
             font-size: 15px;
             font-weight: 400;
-            line-height: 25px;
-           
+            line-height: 25px;         
             
         }
         .contactHeading{
-            color: #272A31;
+            color: $greyish;
             font-size: 15px;
             line-height: 25px;
             p{
                 text-align: center;
                 a{
-                    color: #272A31;
+                    color: $greyish;
                     text-decoration: none;
                 }
             }
         }
     }
 }
-.logoSection{
-    // background:#f7d7d3;
+.logoSection{    
     .logoContainer{
         display:flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         .logoHeading{
-            color: #272A31;
+            color: $greyish;
         }
         .logoLine{
             border: 0.5px solid $orangish;
@@ -339,7 +315,7 @@ body{
             margin: 0 auto;
         }
         .logoDescription{
-            color: #272A31;
+            color: $greyish;
             font-size: 15px;
             line-height: 25px;
             max-width: 500px;
@@ -357,8 +333,7 @@ body{
             justify-content: center;
             img{
                 height: 170px;
-                width: 170px;
-                
+                width: 170px;                
             }
             :hover{
                 scale: 2.0;
@@ -382,7 +357,7 @@ body{
         justify-content: space-evenly;
         margin: 10px;
         .pastEventHeading{
-            color: #272A31;
+            color: $greyish;
             font-size: 20px;
             line-height: 25px;
             margin: 10px 0 0 0;
@@ -393,7 +368,7 @@ body{
             margin: 0px 10px 10px 10px;
         }
         .pastEventDescription{
-            color: #272A31;
+            color: $greyish;
             font-size: 13px;
             margin-bottom: 20px;;
         }
@@ -458,7 +433,7 @@ body{
     justify-content: center;
     
     h2{
-        color: #272A31;
+        color: $greyish;
         font-size: 25px;
         line-height: 25px;
         margin: 10px 0 0 0;
@@ -467,22 +442,18 @@ body{
     .line{
         border: 0.5px solid $orangish;
         width: 25px;
-        margin: 10px;
-        
+        margin: 10px;        
     }
     #jsSection{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         gap: 50px;
-
         .speaker{
             display: flex;
             flex-direction: row;
             align-items: center;
-            justify-items: center;
-
-            
+            justify-items: center;            
                 img{
                     width: 180px;
                     height: 180px;
@@ -498,7 +469,7 @@ body{
                     flex-wrap: wrap;
                     max-width:400px;
                     text-align: left;
-                    color: #272A31;
+                    color: $greyish;
                     h3{
                         font-size: 20px;
                         font-weight: 600;
@@ -565,14 +536,13 @@ body{
                 align-items: center;
                 justify-content: space-between;
                 width: 300px;
-                list-style: none;
-                
+                list-style: none;                
                 .topNavItem{
                     text-decoration: none;
                     color: $greyish;
                     font-size: 15px;
                     font-weight: 200;
-                    color: #D3D3D3;
+                    color: $lightGrey;
                     text-align: center;
                     &:hover{
                         color: $orangish;
@@ -620,15 +590,13 @@ body{
 
             }
            .voucher{
-                border: #EC5242 3px solid;
-                 color: #EC5242;
-            
+                border: $orangish 3px solid;
+                 color: $orangish;            
                 a{
                     text-decoration: none;
-                    color: #EC5242;
+                    color: $orangish;
                     font-size: 16px;
-                }
-            
+                }            
             }
         }
     }
@@ -643,13 +611,11 @@ body{
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
-                    text-align: center;
-                   
-                }
-                
+                    text-align: center;                   
+                }                
             }
             .joinLink{
-                color: #EC5242;
+                color: $orangish;
                 font-size: 20px;
                 padding: 30px;
             }

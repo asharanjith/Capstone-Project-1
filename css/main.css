@@ -145,6 +145,10 @@ body {
   display: flex;
   flex-direction: column;
 }
+.programSection .program .programContainer :hover {
+  scale: 1.2;
+  transition: all 0.5s ease-in-out;
+}
 .programSection .program .programContainer .programItem {
   display: grid;
   grid-template-columns: 1fr 1fr 2fr;
@@ -153,6 +157,8 @@ body {
   align-items: center;
   padding: 2%;
   color: #272A31;
+  max-width: 220px;
+  height: 150px;
 }
 .programSection .program .programContainer .programItem img {
   height: 40px;
