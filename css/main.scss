@@ -453,7 +453,8 @@ body{
             display: flex;
             flex-direction: row;
             align-items: center;
-            justify-items: center;            
+            justify-items: center;  
+            margin-bottom: 10px;          
                 img{
                     width: 180px;
                     height: 180px;
@@ -470,6 +471,7 @@ body{
                     max-width:400px;
                     text-align: left;
                     color: $greyish;
+                    
                     h3{
                         font-size: 20px;
                         font-weight: 600;

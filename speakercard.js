@@ -47,6 +47,9 @@ let num=2;
 if(x>768){
     num=6;
 }
+else{
+    num=2;
+}
 for(let i=0;i<num;i+=1){
    speakerSection.innerHTML += `
    <div class="speaker">        

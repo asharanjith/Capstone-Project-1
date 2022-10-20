@@ -445,6 +445,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-items: center;
+  margin-bottom: 10px;
 }
 .speakerSection #jsSection .speaker img {
   width: 180px;
