@@ -46,7 +46,7 @@ body {
 .navBar .mobileView .mobilemenu {
   display: none;
   flex-direction: column;
-  width: 60%;
+  width: 80%;
   background-color: #D3D3D3;
   opacity: 0.9;
   position: fixed;
@@ -64,7 +64,7 @@ body {
 .navBar .mobileView .mobilemenu .mobile-menu-items {
   color: #EC5242;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 24px;
   line-height: 44px;
   margin-left: 10%;
   margin-top: 5%;
@@ -175,10 +175,6 @@ body {
   border: 1px solid transparent;
   cursor: pointer;
 }
-.programSection .program .joinButton:hover {
-  background-color: #EC5242;
-  color: #272A31;
-}
 .programSection .program .joinButton a {
   text-decoration: none;
   color: #272A31;
@@ -232,6 +228,10 @@ body {
 .footer .footerContainer .footerLogo img {
   width: 120px;
   height: 120px;
+}
+.footer .footerContainer .footerLogo :hover {
+  scale: 1.5;
+  transition: all 0.5s ease-in-out;
 }
 .footer .footerContainer .footerCopyright {
   color: #272A31;
