@@ -23,46 +23,54 @@ body {
   top: 0;
   z-index: 1;
 }
+
 .navBar .topNavBar {
   display: none;
 }
+
 .navBar .bottomNavBar {
   display: none;
 }
+
 .navBar .mobileView {
   background-color: #f4d7d4;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .navBar .mobileView .fa-bars {
   display: block;
   cursor: pointer;
   margin-left: 30px;
   margin-top: 10px;
   font-size: 35px;
-  color: #272A31;
+  color: #272a31;
 }
+
 .navBar .mobileView .mobilemenu {
   display: none;
   flex-direction: column;
   width: 80%;
-  background-color: #D3D3D3;
+  background-color: #d3d3d3;
   opacity: 0.9;
   position: fixed;
   top: 0;
 }
+
 .navBar .mobileView .mobilemenu .fa-times {
-  color: #272A31;
+  color: #272a31;
   font-size: 30px;
   margin-left: 85%;
   margin-top: 5%;
 }
+
 .navBar .mobileView .mobilemenu .fa-times i:hover {
   cursor: pointer;
 }
+
 .navBar .mobileView .mobilemenu .mobile-menu-items {
-  color: #EC5242;
+  color: #ec5242;
   font-weight: 600;
   font-size: 24px;
   line-height: 44px;
@@ -70,8 +78,9 @@ body {
   margin-top: 5%;
   text-decoration: none;
 }
+
 .navBar .mobileView .mobilemenu .mobile-menu-items:hover {
-  color: #272A31;
+  color: #272a31;
   cursor: pointer;
 }
 
@@ -79,6 +88,7 @@ body {
   background-image: url(../Assets/MainBG.jpg);
   height: 100vh;
 }
+
 .homePage .mainContent {
   padding-top: 40px;
   display: flex;
@@ -88,18 +98,19 @@ body {
   gap: 50px;
   margin-left: 7%;
 }
+
 .homePage .mainContent .headingContainer {
   max-width: 500px;
 }
+
 .homePage .mainContent .headingContainer .greetingHeading {
-  color: #EC5242;
+  color: #ec5242;
   font-size: 30px;
 }
+
 .homePage .mainContent .headingContainer .titleHeading {
   background-image: url(../Assets/headingBG.jpg);
-  background-repeat: repeat;
   -webkit-background-clip: text;
-          background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Lato", sans-serif;
   background-size: cover;
@@ -107,17 +118,19 @@ body {
   background-position-y: center;
   font-size: 4rem;
 }
+
 .homePage .mainContent .mainDescription {
-  border: #D3D3D3 2px solid;
-  background: #D3D3D3;
+  border: #d3d3d3 2px solid;
+  background: #d3d3d3;
   opacity: 0.8;
   width: 80%;
   max-width: 600px;
   line-height: 25px;
   text-align: center;
 }
+
 .homePage .mainContent .date {
-  color: #272A31;
+  color: #272a31;
   font-size: 30px;
   font-weight: 800;
 }
@@ -129,44 +142,51 @@ body {
   justify-content: center;
   flex-direction: column;
 }
+
 .programSection .program h2 {
-  color: #272A31;
+  color: #272a31;
   font-size: 30px;
   font-weight: 800;
   text-align: center;
   padding-top: 10%;
 }
+
 .programSection .program .line {
-  border: 0.5px solid #EC5242;
+  border: 0.5px solid #ec5242;
   width: 10%;
   margin: 0 auto;
 }
+
 .programSection .program .programContainer {
   display: flex;
   flex-direction: column;
 }
+
 .programSection .program .programContainer :hover {
   scale: 1.2;
   transition: all 0.5s ease-in-out;
 }
+
 .programSection .program .programContainer .programItem {
   display: grid;
   grid-template-columns: 1fr 1fr 2fr;
-  background-color: #EC5242;
+  background-color: #ec5242;
   margin: 10px;
   align-items: center;
   padding: 2%;
-  color: #272A31;
+  color: #272a31;
   max-width: 220px;
   height: 150px;
 }
+
 .programSection .program .programContainer .programItem img {
   height: 40px;
   opacity: 0.7;
 }
+
 .programSection .program .joinButton {
-  background-color: #EC5242;
-  color: #272A31;
+  background-color: #ec5242;
+  color: #272a31;
   text-align: center;
   font-size: 20px;
   font-weight: 600;
@@ -175,72 +195,81 @@ body {
   border: 1px solid transparent;
   cursor: pointer;
 }
+
 .programSection .program .joinButton a {
   text-decoration: none;
-  color: #272A31;
+  color: #272a31;
 }
 
 .partnerSection .partnerContainer {
-  background-color: #D3D3D3;
+  background-color: #d3d3d3;
 }
+
 .partnerSection .partnerContainer h4 {
-  color: #272A31;
+  color: #272a31;
   font-size: 30px;
   font-weight: 800;
   text-align: center;
-  background-color: #D3D3D3 transparent;
 }
+
 .partnerSection .partnerContainer .line {
-  border: 0.5px solid #EC5242;
+  border: 0.5px solid #ec5242;
   width: 3%;
   margin: 0 auto;
 }
+
 .partnerSection .partnerContainer .partnerList {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: #D3D3D3 transparent;
   opacity: 0.5;
   gap: 20px;
   margin-top: 10px;
   flex-wrap: wrap;
 }
+
 .partnerSection .partnerContainer .partnerList .partnerItem {
   align-self: center;
 }
+
 .partnerSection .partnerContainer .partnerList .partnerItem img {
   width: 150px;
   height: 100px;
-  color: #272A31;
+  color: #272a31;
   margin-bottom: 10px;
 }
 
 .footer {
   height: 150px;
 }
+
 .footer .footerContainer {
   padding: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.footer .footerContainer .footerLogo img {
+
+.footer .footerContainer .footerLogo .footerImg {
   width: 120px;
   height: 120px;
 }
+
 .footer .footerContainer .footerLogo :hover {
   scale: 1.5;
   transition: all 0.5s ease-in-out;
 }
+
 .footer .footerContainer .footerCopyright {
-  color: #272A31;
+  color: #272a31;
 }
 
 .aboutPage {
   background-image: url(../Assets/MainBG.jpg);
   height: 100vh;
 }
+
 .aboutPage .mainContent {
   display: flex;
   flex-direction: column;
@@ -249,19 +278,20 @@ body {
   gap: 50px;
   margin-left: 7%;
 }
+
 .aboutPage .mainContent .headingContainer {
   max-width: 500px;
   padding-top: 25px;
 }
+
 .aboutPage .mainContent .headingContainer .greetingHeading {
-  color: #EC5242;
+  color: #ec5242;
   font-size: 30px;
 }
+
 .aboutPage .mainContent .headingContainer .titleHeading {
   background-image: url(../Assets/headingBG.jpg);
-  background-repeat: repeat;
   -webkit-background-clip: text;
-          background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Lato", sans-serif;
   background-size: cover;
@@ -269,28 +299,32 @@ body {
   background-position-y: center;
   font-size: 4rem;
 }
+
 .aboutPage .mainContent .mainDescription {
-  border: #D3D3D3 2px solid;
-  background: #D3D3D3;
+  border: #d3d3d3 2px solid;
+  background: #d3d3d3;
   opacity: 0.7;
   width: 80%;
   max-width: 900px;
   text-align: center;
-  color: #272A31;
+  color: #272a31;
   font-size: 15px;
   font-weight: 400;
   line-height: 25px;
 }
+
 .aboutPage .mainContent .contactHeading {
-  color: #272A31;
+  color: #272a31;
   font-size: 15px;
   line-height: 25px;
 }
+
 .aboutPage .mainContent .contactHeading p {
   text-align: center;
 }
+
 .aboutPage .mainContent .contactHeading p a {
-  color: #272A31;
+  color: #272a31;
   text-decoration: none;
 }
 
@@ -300,42 +334,49 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .logoSection .logoContainer .logoHeading {
-  color: #272A31;
+  color: #272a31;
 }
+
 .logoSection .logoContainer .logoLine {
-  border: 0.5px solid #EC5242;
+  border: 0.5px solid #ec5242;
   width: 25px;
   margin: 0 auto;
 }
+
 .logoSection .logoContainer .logoDescription {
-  color: #272A31;
+  color: #272a31;
   font-size: 15px;
   line-height: 25px;
   max-width: 500px;
   text-align: center;
 }
+
 .logoSection .logoContainer .logoImage {
   width: 320px;
   height: 200px;
   max-width: 500px;
-  border: 0.5px solid #272A31;
+  border: 0.5px solid #272a31;
   margin: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.logoSection .logoContainer .logoImage img {
+
+.logoSection .logoContainer .logoImage .logoAbout {
   height: 170px;
   width: 170px;
 }
+
 .logoSection .logoContainer .logoImage :hover {
   scale: 2;
   transition: all 0.3s ease-in-out;
 }
+
 .logoSection .logoContainer .logoImage p {
-  color: #272A31;
+  color: #272a31;
   font-size: 12px;
   line-height: 25px;
   text-decoration: overline underline;
@@ -348,22 +389,26 @@ body {
   justify-content: space-evenly;
   margin: 10px;
 }
+
 .pastEvent .pastEventContent .pastEventHeading {
-  color: #272A31;
+  color: #272a31;
   font-size: 20px;
   line-height: 25px;
   margin: 10px 0 0 0;
 }
+
 .pastEvent .pastEventContent .pastEventLine {
-  border: 0.5px solid #EC5242;
+  border: 0.5px solid #ec5242;
   width: 25px;
-  margin: 0px 10px 10px 10px;
+  margin: 0 10px 10px 10px;
 }
+
 .pastEvent .pastEventContent .pastEventDescription {
-  color: #272A31;
+  color: #272a31;
   font-size: 13px;
   margin-bottom: 20px;
 }
+
 .pastEvent .pastEventContent .pastEventContainer {
   display: flex;
   flex-direction: column;
@@ -372,11 +417,13 @@ body {
   width: 100%;
   margin-bottom: 3%;
 }
+
 .pastEvent .pastEventContent .pastEventContainer :hover {
   cursor: pointer;
   scale: 1.2;
   transition: all 0.3s ease-in-out;
 }
+
 .pastEvent .pastEventContent .pastEventContainer .pastEventImage1 {
   height: 200px;
   margin-top: 20px;
@@ -392,11 +439,13 @@ body {
   background-size: cover;
   background-position-y: -50px;
 }
+
 .pastEvent .pastEventContent .pastEventContainer .pastEventImage1 h4 {
   font-size: 20px;
   font-weight: 600;
   margin: 0;
 }
+
 .pastEvent .pastEventContent .pastEventContainer .pastEventImage2 {
   width: 50%;
   height: 200px;
@@ -410,6 +459,7 @@ body {
   background-size: cover;
   background-position-y: -50px;
 }
+
 .pastEvent .pastEventContent .pastEventContainer .pastEventImage2 h4 {
   font-size: 20px;
   font-weight: 600;
@@ -422,24 +472,28 @@ body {
   align-items: center;
   justify-content: center;
 }
-.speakerSection h2 {
-  color: #272A31;
+
+.speakerSection .speakerTitle {
+  color: #272a31;
   font-size: 25px;
   line-height: 25px;
   margin: 10px 0 0 0;
   text-align: center;
 }
-.speakerSection .line {
-  border: 0.5px solid #EC5242;
+
+.speakerSection .lineS {
+  border: 0.5px solid #ec5242;
   width: 25px;
   margin: 10px;
 }
+
 .speakerSection #jsSection {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   gap: 50px;
 }
+
 .speakerSection #jsSection .speaker {
   display: flex;
   flex-direction: row;
@@ -447,13 +501,15 @@ body {
   justify-items: center;
   margin-bottom: 10px;
 }
+
 .speakerSection #jsSection .speaker img {
   width: 180px;
   height: 180px;
   border-radius: 50%;
   margin: 10px;
-  box-shadow: 5px 10px #EC5242;
+  box-shadow: 5px 10px #ec5242;
 }
+
 .speakerSection #jsSection .speaker .speakerInfo {
   display: flex;
   flex-direction: column;
@@ -462,20 +518,23 @@ body {
   flex-wrap: wrap;
   max-width: 400px;
   text-align: left;
-  color: #272A31;
+  color: #272a31;
 }
+
 .speakerSection #jsSection .speaker .speakerInfo h3 {
   font-size: 20px;
   font-weight: 600;
   margin: 0;
 }
+
 .speakerSection #jsSection .speaker .speakerInfo .position {
-  color: #EC5242;
+  color: #ec5242;
   font-size: 15px;
   font-weight: 600;
 }
+
 .speakerSection button {
-  background: #EC5242;
+  background: #ec5242;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -485,20 +544,8 @@ body {
   font-weight: 600;
   cursor: pointer;
 }
-.speakerSection button :hover {
-  background: #EC5242;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  margin: 20px;
-  font-size: 15px;
-  font-weight: 600;
-  cursor: pointer;
-  scale: 1.2;
-  transition: all 0.3s ease-in-out;
-}
-.speakerSection button i {
+
+.speakerSection button .icon {
   margin-left: 10px;
 }
 
@@ -506,19 +553,23 @@ body {
   .desktop {
     display: block;
   }
+
   .mobile {
     display: none;
   }
+
   .navBar .mobileView {
     display: none;
   }
+
   .navBar .topNavBar {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
     height: 30px;
-    background-color: #272A31;
+    background-color: #272a31;
   }
+
   .navBar .topNavBar .topNavList {
     margin-right: 30px;
     margin-top: 10px;
@@ -528,17 +579,19 @@ body {
     width: 300px;
     list-style: none;
   }
+
   .navBar .topNavBar .topNavList .topNavItem {
     text-decoration: none;
-    color: #272A31;
+    color: #272a31;
     font-size: 15px;
     font-weight: 200;
-    color: #D3D3D3;
     text-align: center;
   }
+
   .navBar .topNavBar .topNavList .topNavItem:hover {
-    color: #EC5242;
+    color: #ec5242;
   }
+
   .navBar .bottomNavBar {
     display: flex;
     align-items: center;
@@ -548,14 +601,17 @@ body {
     background-color: white;
     height: 70px;
   }
+
   .navBar .bottomNavBar a img {
     height: 60px;
     width: 60px;
   }
+
   .navBar .bottomNavBar a :hover {
     scale: 2;
     transition: all 0.3s ease-in-out;
   }
+
   .navBar .bottomNavBar .bottomNavList {
     gap: 30px;
     display: flex;
@@ -563,30 +619,36 @@ body {
     justify-content: space-between;
     list-style: none;
   }
+
   .navBar .bottomNavBar .bottomNavList .bottomNavItem .navLinks {
     text-decoration: none;
-    color: #272A31;
+    color: #272a31;
     font-size: 15px;
     font-weight: 200;
     text-align: center;
   }
+
   .navBar .bottomNavBar .bottomNavList .bottomNavItem .navLinks:hover {
-    color: #EC5242;
+    color: #ec5242;
   }
+
   .navBar .bottomNavBar .voucher {
-    border: #EC5242 3px solid;
-    color: #EC5242;
+    border: #ec5242 3px solid;
+    color: #ec5242;
   }
+
   .navBar .bottomNavBar .voucher a {
     text-decoration: none;
-    color: #EC5242;
+    color: #ec5242;
     font-size: 16px;
   }
+
   .programSection .program .programContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
   }
+
   .programSection .program .programContainer .programItem {
     display: flex;
     flex-direction: column;
@@ -594,11 +656,13 @@ body {
     justify-content: center;
     text-align: center;
   }
+
   .programSection .program .joinLink {
-    color: #EC5242;
+    color: #ec5242;
     font-size: 20px;
     padding: 30px;
   }
+
   .pastEvent .pastEventContent .pastEventContainer {
     width: 80%;
     display: flex;
@@ -607,19 +671,22 @@ body {
     align-items: center;
     gap: 20px;
   }
+
   .pastEvent .pastEventContent .pastEventContainer .pastEventImage1 {
     width: 40%;
     height: 300px;
     background-position-y: -100px;
   }
+
   .pastEvent .pastEventContent .pastEventContainer .pastEventImage2 {
     width: 40%;
     height: 300px;
     background-position-y: -100px;
   }
+
   .speakerSection #jsSection {
     flex-direction: row;
     align-items: center;
     justify-content: center;
   }
-}/*# sourceMappingURL=main.css.map */
+}
