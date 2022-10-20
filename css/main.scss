@@ -52,7 +52,8 @@ body {
     .mobilemenu {
       display: none;
       flex-direction: column;
-      width: 80%;
+      width: 100%;
+      height: 100vh;
       background-color: $lightGrey;
       opacity: 0.9;
       position: fixed;
@@ -163,6 +164,7 @@ body {
     .programContainer {
       display: flex;
       flex-direction: column;
+      align-items: center;
 
       :hover {
         scale: 1.2;
@@ -175,10 +177,10 @@ body {
         background-color: $orangish;
         margin: 10px;
         align-items: center;
+        justify-content: center;
         padding: 2%;
         color: $greyish;
-        max-width: 220px;
-        height: 150px;
+        width: 85%;
 
         img {
           height: 40px;
@@ -237,7 +239,7 @@ body {
         align-self: center;
 
         img {
-          width: 150px;
+          width: 100px;
           height: 100px;
           color: $greyish;
           margin-bottom: 10px;
@@ -250,11 +252,16 @@ body {
 .footer {
   height: 150px;
 
+  .dark {
+    background-color: $greyish;
+  }
+
   .footerContainer {
     padding: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 80px;
 
     .footerLogo {
       .footerImg {
@@ -269,7 +276,7 @@ body {
     }
 
     .footerCopyright {
-      color: $greyish;
+      color: $lightGrey;
     }
   }
 }
@@ -343,6 +350,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 30px;
 
     .logoHeading {
       color: $greyish;
@@ -356,7 +364,7 @@ body {
 
     .logoDescription {
       color: $greyish;
-      font-size: 15px;
+      font-size: 12px;
       line-height: 25px;
       max-width: 500px;
       text-align: center;
@@ -366,7 +374,7 @@ body {
       width: 320px;
       height: 200px;
       max-width: 500px;
-      border: 0.5px solid $greyish;
+      border: 0.5px solid $lightGrey;
       margin: 10px;
       display: flex;
       flex-direction: column;
@@ -628,10 +636,11 @@ body {
       }
 
       .bottomNavList {
+        flex-grow: 2;
         gap: 30px;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: flex-end;
         list-style: none;
 
         .bottomNavItem {
@@ -652,6 +661,7 @@ body {
       .voucher {
         border: $orangish 3px solid;
         color: $orangish;
+        margin-left: 20px;
 
         a {
           text-decoration: none;
@@ -675,6 +685,7 @@ body {
           align-items: center;
           justify-content: center;
           text-align: center;
+          max-height: 150px;
         }
       }
 
@@ -716,6 +727,7 @@ body {
       flex-direction: row;
       align-items: center;
       justify-content: center;
+      flex-wrap: wrap;
     }
   }
 

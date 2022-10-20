@@ -51,7 +51,8 @@ body {
 .navBar .mobileView .mobilemenu {
   display: none;
   flex-direction: column;
-  width: 80%;
+  width: 100%;
+  height: 100vh;
   background-color: #d3d3d3;
   opacity: 0.9;
   position: fixed;
@@ -160,6 +161,7 @@ body {
 .programSection .program .programContainer {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .programSection .program .programContainer :hover {
@@ -173,10 +175,10 @@ body {
   background-color: #ec5242;
   margin: 10px;
   align-items: center;
+  justify-content: center;
   padding: 2%;
   color: #272a31;
-  max-width: 220px;
-  height: 150px;
+  width: 85%;
 }
 
 .programSection .program .programContainer .programItem img {
@@ -234,7 +236,7 @@ body {
 }
 
 .partnerSection .partnerContainer .partnerList .partnerItem img {
-  width: 150px;
+  width: 100px;
   height: 100px;
   color: #272a31;
   margin-bottom: 10px;
@@ -244,11 +246,16 @@ body {
   height: 150px;
 }
 
+.footer .dark {
+  background-color: #272a31;
+}
+
 .footer .footerContainer {
   padding: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 80px;
 }
 
 .footer .footerContainer .footerLogo .footerImg {
@@ -262,7 +269,7 @@ body {
 }
 
 .footer .footerContainer .footerCopyright {
-  color: #272a31;
+  color: #d3d3d3;
 }
 
 .aboutPage {
@@ -333,6 +340,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 30px;
 }
 
 .logoSection .logoContainer .logoHeading {
@@ -347,7 +355,7 @@ body {
 
 .logoSection .logoContainer .logoDescription {
   color: #272a31;
-  font-size: 15px;
+  font-size: 12px;
   line-height: 25px;
   max-width: 500px;
   text-align: center;
@@ -357,7 +365,7 @@ body {
   width: 320px;
   height: 200px;
   max-width: 500px;
-  border: 0.5px solid #272a31;
+  border: 0.5px solid #d3d3d3;
   margin: 10px;
   display: flex;
   flex-direction: column;
@@ -613,10 +621,11 @@ body {
   }
 
   .navBar .bottomNavBar .bottomNavList {
+    flex-grow: 2;
     gap: 30px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     list-style: none;
   }
 
@@ -635,6 +644,7 @@ body {
   .navBar .bottomNavBar .voucher {
     border: #ec5242 3px solid;
     color: #ec5242;
+    margin-left: 20px;
   }
 
   .navBar .bottomNavBar .voucher a {
@@ -655,6 +665,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+    max-height: 150px;
   }
 
   .programSection .program .joinLink {
@@ -688,6 +699,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
   }
 
   .aboutPage .mainContent .headingContainer .titleHeading {
