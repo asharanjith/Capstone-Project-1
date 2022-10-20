@@ -116,7 +116,7 @@ body {
   background-size: cover;
   font-weight: 800;
   background-position-y: center;
-  font-size: 4rem;
+  font-size: 50px;
 }
 
 .homePage .mainContent .mainDescription {
@@ -297,7 +297,7 @@ body {
   background-size: cover;
   font-weight: 800;
   background-position-y: center;
-  font-size: 4rem;
+  font-size: 50px;
 }
 
 .aboutPage .mainContent .mainDescription {
@@ -688,5 +688,13 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+  }
+
+  .aboutPage .mainContent .headingContainer .titleHeading {
+    font-size: 70px;
+  }
+
+  .homePage .mainContent .headingContainer .titleHeading {
+    font-size: 70px;
   }
 }
