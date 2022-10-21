@@ -1,1 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Capstone</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>        
+    </head>
+    <body> 
+        <nav class="navBar">
+            <div class="topNavBar">
+                <ul class="topNavList">
+                    <li><a href="#" class="topNavItem" target="_blank" rel="noopener" ><i class='fab fa-facebook'></i></a></li>
+                    <li><a href="#" class="topNavItem" target="_blank" rel="noopener" ><i class='fab fa-twitter'></i></a></li>
+                    <li class="topNavItem">English</li>
+                    <li class="topNavItem">Mypage</li>
+                    <li class="topNavItem">Logout</li>
+                </ul> 
+            </div>
+            <div class="bottomNavBar">
+                <a href="index.html" target="_self" class="Logo"><img src="./Assets/NewLogo.png"></a>
+                <ul class="bottomNavList">
+                    
+                    <li class="bottomNavItem"><a href="about.html" target="_self" class="navLinks" >About</a></li>
+                    <li class="bottomNavItem"><a href="#Program" target="_self" class="navLinks" rel="noopener">Program</a></li>
+                    <li class="bottomNavItem"><a href="#speakers" target="_self" class="navLinks" rel="noopener">Speakers</a></li>
+                    <li class="bottomNavItem"><a href="#sponsor" target="_self" class="navLinks" rel="noopener">Sponsor</a></li>
+                    <li class="bottomNavItem"><a href="#" target="_self" class="navLinks" rel="noopener">News</a></li>
+                </ul>
+                <div class="voucher"><a href="#" target="_blank" rel="noopener">Catalogue</a></div>
+            </div>
+            <div class="mobileView">                
+                <i class="fas fa-bars" id="burgerIcon"></i>                
+                <div class="mobilemenu">
+                    <i class="fas fa-times"></i>
+                    <a class="mobile-menu-items home-page" href="index.html">Home</a>
+                    <a class="mobile-menu-items about-page" href="about.html">About</a>
+                    <a class="mobile-menu-items program-section" href="#Program">Program</a>
+                    <a class="mobile-menu-items speaker-section" href="#speakers">Speakers</a>
+                    <a class="mobile-menu-items sponsor-section" href="#sponsor">Sponsor</a>
+                    <a class="mobile-menu-items news-section" href="#">News</a> 
+                </div>
+            </div>
 
+        </nav>
+        <main>
+            <section class="homePage">
+                <div class="mainContent">
+                    <div class="headingContainer">
+                        <h2 class="greetingHeading">"Hello!Beauty  world"</h2>
+                        <h1 class="titleHeading">SUMMIT OF BEAUTY 2022</h1>
+                    </div>
+                    <div class="mainDescription">
+                        <p>Connect with the best experts, in real life, at our summit.
+                         Be part of this unique experience and listen to their
+                          life-changing advice in person!
+                        </p>
+                    </div>
+                    <div class="date-venue">
+                        <p class="date">2022.10.15(THU) ~ 16(FRI)</p>
+                        <p>@ National Museum of Dubai, Art Center Dubai and more</p>
+                    </div>
+                </div>
+            </section>
+            <section class="programSection" id="Program">
+                <div class="program">
+                    <h2>Main Program</h2>
+                    <div class="line"></div>
+                    <div class="programContainer">
+                        <article class="programItem">
+                            <img src="./Assets/makeup.svg" alt="lecture">
+                            <h3>Make-up</h3>
+                            <p>Handpicked from the most reputable brands to provide you the best</p>
+                        </article>
+                        <article class="programItem">
+                            <img src="./Assets/skincare.svg" alt="exhibition">
+                            <h3>Skin care</h3>
+                            <p>More than just skin deep, Vegan and cruelty-free</p>
+                        </article>
+                        <article class="programItem">
+                            <img src="./Assets/haircare.svg" alt="forum">
+                            <h3>Hair care</h3>
+                            <p>Say goodbye to bad chemicals and unhealthy ingredients.</p>
+                        </article>
+                        <article class="programItem">
+                            <img src="./Assets/workshop.svg" alt="workshop">
+                            <h3>Workshop</h3>
+                            <p>More panels and workshops than last year</p>
+                        </article>
+                        <article class="programItem">
+                            <img src="./Assets/edit-regular.svg" alt="ignite">
+                            <h3>Q & A</h3>
+                            <p>This is your chance to be part of the conversation.</p>
+                            
+                        </article>
+                    </div>
+                    <button class="joinButton mobile"><a href="#">Join Beauty Summit 2022</a></button>
+                    <a href="#" target="_blank" rel="noopener" class="joinLink desktop">See the whole program</a>
+                </div>
+            </section>
+            <section class="speakerSection" id="speakers">
+                <h2 class="speakerTitle">Featured Speakers</h2>
+                <div class="lineS"></div>  
+                <div id="jsSection"></div>
+                <button class="moreButton mobile">More<i class="fas fa-chevron-down icon"></i></button>
+            </section>
+            <section class="partnerSection desktop" id="sponsor">
+                <div class="partnerContainer">
+                    <h4>Partner</h4>
+                    <div class="line"></div>
+                    <div class="partnerList">
+                        <ul>
+                            <li class="partnerItem">sNaaNa</li>
+                            <li class="partnerItem">Google</li>
+                            <li class="partnerItem">Cosmetic</li>
+                            <li class="partnerItem">Niveaa</li>
+                            <li class="partnerItem">Lakmee</li>
+                        </ul>  
+                    </div>                         
+                </div>
+            </section>
+            <footer class="footer desktop">
+                <div class="footerContainer">
+                    <div class="footerLogo">
+                        <img src="./Assets/NewLogo.png" alt="logo" class="footerImg">   
+                    </div>
+                    <div class="footerCopyright">
+                        <p>2022 Beauty Summit. <br>Some rights reserved</p>
+                    </div>
+                </div>
+            </footer>
+        </main>
+        <script src="script.js"></script> 
+        <script src="speakercard.js"></script>      
+    </body>
+</html>
