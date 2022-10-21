@@ -10,8 +10,8 @@
         <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>        
     </head>
     <body> 
-        <header class="navBar">
-            <nav class="topNavBar">
+        <nav class="navBar">
+            <div class="topNavBar">
                 <ul class="topNavList">
                     <li><a href="#" class="topNavItem" target="_blank" rel="noopener" ><i class='fab fa-facebook'></i></a></li>
                     <li><a href="#" class="topNavItem" target="_blank" rel="noopener" ><i class='fab fa-twitter'></i></a></li>
@@ -19,8 +19,8 @@
                     <li class="topNavItem">Mypage</li>
                     <li class="topNavItem">Logout</li>
                 </ul> 
-            </nav>
-            <nav class="bottomNavBar">
+            </div>
+            <div class="bottomNavBar">
                 <a href="index.html" target="_self" class="Logo"><img src="./Assets/NewLogo.png"></a>
                 <ul class="bottomNavList">
                     
@@ -31,8 +31,8 @@
                     <li class="bottomNavItem"><a href="#" target="_self" class="navLinks" rel="noopener">News</a></li>
                 </ul>
                 <div class="voucher"><a href="#" target="_blank" rel="noopener">Catalogue</a></div>
-            </nav>
-            <nav class="mobileView">                
+            </div>
+            <div class="mobileView">                
                 <i class="fas fa-bars" id="burgerIcon"></i>                
                 <div class="mobilemenu">
                     <i class="fas fa-times"></i>
@@ -43,9 +43,9 @@
                     <a class="mobile-menu-items sponsor-section" href="#sponsor">Sponsor</a>
                     <a class="mobile-menu-items news-section" href="#">News</a> 
                 </div>
-            </nav>
+            </div>
 
-        </header>
+        </nav>
         <main>
             <section class="homePage">
                 <div class="mainContent">
@@ -112,21 +112,14 @@
                     <h4>Partner</h4>
                     <div class="line"></div>
                     <div class="partnerList">
-                        <div class="partnerItem">
-                            <img src="./Assets/SNAANA-logo.png" alt="partner1">
-                        </div>
-                        <div class="partnerItem">
-                            <img src="./Assets/Google Logo.png" alt="partner2">
-                        </div>
-                        <div class="partnerItem">
-                            <img src="./Assets/makeupLogo.jpg" alt="partner3">
-                        </div>
-                        <div class="partnerItem">
-                            <img src="./Assets/Beauty-Brand-Logos-2.png" alt="partner4">
-                        </div>
-                        <div class="partnerItem">
-                            <img src="./Assets/Beauty-Brand-Logos-9.png" alt="partner5">
-                        </div>
+                        <ul>
+                            <li class="partnerItem">sNaaNa</li>
+                            <li class="partnerItem">Google</li>
+                            <li class="partnerItem">Cosmetic</li>
+                            <li class="partnerItem">Niveaa</li>
+                            <li class="partnerItem">Lakmee</li>
+                        </ul>  
+                    </div>                         
                 </div>
             </section>
             <footer class="footer desktop">

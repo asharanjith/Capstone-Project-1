@@ -86,7 +86,7 @@ body {
 }
 
 .homePage {
-  background-image: url(../Assets/MainBG.jpg);
+  background-image: url(../Assets/BG.jpg);
   height: 100vh;
 }
 
@@ -137,7 +137,7 @@ body {
 }
 
 .programSection .program {
-  background-image: url(../Assets/peachBG.jpg);
+  background-image: url(../Assets/BlackPatternBG.jpg);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -145,17 +145,18 @@ body {
 }
 
 .programSection .program h2 {
-  color: #272a31;
+  color: #d3d3d3;
   font-size: 30px;
   font-weight: 800;
   text-align: center;
-  padding-top: 10%;
+  padding-top: 5%;
 }
 
 .programSection .program .line {
   border: 0.5px solid #ec5242;
-  width: 10%;
+  width: 5%;
   margin: 0 auto;
+  margin-top: 1%;
 }
 
 .programSection .program .programContainer {
@@ -172,18 +173,25 @@ body {
 .programSection .program .programContainer .programItem {
   display: grid;
   grid-template-columns: 1fr 1fr 2fr;
-  background-color: #ec5242;
+  background-color: #272a31;
+  opacity: 0.6;
   margin: 10px;
   align-items: center;
   justify-content: center;
   padding: 2%;
-  color: #272a31;
+  color: #ec5242;
   width: 85%;
 }
 
 .programSection .program .programContainer .programItem img {
   height: 40px;
-  opacity: 0.7;
+  margin-bottom: 5px;
+}
+
+.programSection .program .programContainer .programItem p {
+  color: #d3d3d3;
+  font-size: 12px;
+  margin-top: 5px;
 }
 
 .programSection .program .joinButton {
@@ -204,14 +212,16 @@ body {
 }
 
 .partnerSection .partnerContainer {
-  background-color: #d3d3d3;
+  background-color: #272a31;
+  min-height: 200px;
 }
 
 .partnerSection .partnerContainer h4 {
-  color: #272a31;
+  color: #d3d3d3;
   font-size: 30px;
   font-weight: 800;
   text-align: center;
+  padding-top: 1%;
 }
 
 .partnerSection .partnerContainer .line {
@@ -220,26 +230,22 @@ body {
   margin: 0 auto;
 }
 
-.partnerSection .partnerContainer .partnerList {
+.partnerSection .partnerContainer .partnerList ul {
+  list-style: none;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   opacity: 0.5;
-  gap: 20px;
-  margin-top: 10px;
+  gap: 40px;
+  margin-top: 30px;
   flex-wrap: wrap;
 }
 
-.partnerSection .partnerContainer .partnerList .partnerItem {
-  align-self: center;
-}
-
-.partnerSection .partnerContainer .partnerList .partnerItem img {
-  width: 100px;
-  height: 100px;
-  color: #272a31;
+.partnerSection .partnerContainer .partnerList ul .partnerItem {
+  color: #d3d3d3;
   margin-bottom: 10px;
+  font-size: 35px;
 }
 
 .footer {
@@ -247,7 +253,7 @@ body {
 }
 
 .footer .dark {
-  background-color: #272a31;
+  background-color: #d3d3d3;
 }
 
 .footer .footerContainer {
@@ -273,7 +279,7 @@ body {
 }
 
 .aboutPage {
-  background-image: url(../Assets/MainBG.jpg);
+  background-image: url(../Assets/BG.jpg);
   height: 100vh;
 }
 
@@ -326,11 +332,11 @@ body {
   line-height: 25px;
 }
 
-.aboutPage .mainContent .contactHeading p {
+.aboutPage .mainContent .contactHeading .content {
   text-align: center;
 }
 
-.aboutPage .mainContent .contactHeading p a {
+.aboutPage .mainContent .contactHeading .content a {
   color: #272a31;
   text-decoration: none;
 }
@@ -383,7 +389,7 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
-.logoSection .logoContainer .logoImage p {
+.logoSection .logoContainer .logoImage .logoContent {
   color: #272a31;
   font-size: 12px;
   line-height: 25px;
@@ -572,9 +578,9 @@ body {
 
   .navBar .topNavBar {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: flex-end;
-    height: 30px;
+    height: 40px;
     background-color: #272a31;
   }
 
@@ -591,7 +597,7 @@ body {
   .navBar .topNavBar .topNavList .topNavItem {
     text-decoration: none;
     color: #d3d3d3;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 200;
     text-align: center;
   }
@@ -642,15 +648,20 @@ body {
   }
 
   .navBar .bottomNavBar .voucher {
-    border: #ec5242 3px solid;
+    border: #ec5242 4px solid;
     color: #ec5242;
-    margin-left: 20px;
+    margin-left: 60px;
+    height: 35px;
+    width: 100px;
+    text-align: center;
   }
 
   .navBar .bottomNavBar .voucher a {
     text-decoration: none;
     color: #ec5242;
-    font-size: 16px;
+    font-size: 15px;
+    padding: 5px;
+    font-weight: 400;
   }
 
   .programSection .program .programContainer {
@@ -666,6 +677,7 @@ body {
     justify-content: center;
     text-align: center;
     max-height: 150px;
+    max-width: 200px;
   }
 
   .programSection .program .joinLink {

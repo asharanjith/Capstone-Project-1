@@ -89,7 +89,7 @@ body {
 }
 
 .homePage {
-  background-image: url(../Assets/MainBG.jpg);
+  background-image: url(../Assets/BG.jpg);
   height: 100vh;
 
   .mainContent {
@@ -141,24 +141,25 @@ body {
 
 .programSection {
   .program {
-    background-image: url(../Assets/peachBG.jpg);
+    background-image: url(../Assets/BlackPatternBG.jpg);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 
     h2 {
-      color: $greyish;
+      color: $lightGrey;
       font-size: 30px;
       font-weight: 800;
       text-align: center;
-      padding-top: 10%;
+      padding-top: 5%;
     }
 
     .line {
       border: 0.5px solid $orangish;
-      width: 10%;
+      width: 5%;
       margin: 0 auto;
+      margin-top: 1%;
     }
 
     .programContainer {
@@ -174,17 +175,24 @@ body {
       .programItem {
         display: grid;
         grid-template-columns: 1fr 1fr 2fr;
-        background-color: $orangish;
+        background-color: $greyish;
+        opacity: 0.6;
         margin: 10px;
         align-items: center;
         justify-content: center;
         padding: 2%;
-        color: $greyish;
+        color: $orangish;
         width: 85%;
 
         img {
           height: 40px;
-          opacity: 0.7;
+          margin-bottom: 5px;
+        }
+
+        p {
+          color: $lightGrey;
+          font-size: 12px;
+          margin-top: 5px;
         }
       }
     }
@@ -210,13 +218,15 @@ body {
 
 .partnerSection {
   .partnerContainer {
-    background-color: $lightGrey;
+    background-color: $greyish;
+    min-height: 200px;
 
     h4 {
-      color: $greyish;
+      color: $lightGrey;
       font-size: 30px;
       font-weight: 800;
       text-align: center;
+      padding-top: 1%;
     }
 
     .line {
@@ -226,23 +236,23 @@ body {
     }
 
     .partnerList {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      opacity: 0.5;
-      gap: 20px;
-      margin-top: 10px;
-      flex-wrap: wrap;
+      ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        opacity: 0.5;
+        gap: 40px;
+        margin-top: 30px;
+        flex-wrap: wrap;
 
-      .partnerItem {
-        align-self: center;
+        .partnerItem {
+          // align-self: center;
 
-        img {
-          width: 100px;
-          height: 100px;
-          color: $greyish;
+          color: $lightGrey;
           margin-bottom: 10px;
+          font-size: 35px;
         }
       }
     }
@@ -253,7 +263,7 @@ body {
   height: 150px;
 
   .dark {
-    background-color: $greyish;
+    background-color: $lightGrey;
   }
 
   .footerContainer {
@@ -282,7 +292,7 @@ body {
 }
 
 .aboutPage {
-  background-image: url(../Assets/MainBG.jpg);
+  background-image: url(../Assets/BG.jpg);
   height: 100vh;
 
   .mainContent {
@@ -332,7 +342,7 @@ body {
       font-size: 15px;
       line-height: 25px;
 
-      p {
+      .content {
         text-align: center;
 
         a {
@@ -391,7 +401,7 @@ body {
         transition: all 0.3s ease-in-out;
       }
 
-      p {
+      .logoContent {
         color: $greyish;
         font-size: 12px;
         line-height: 25px;
@@ -586,9 +596,9 @@ body {
 
     .topNavBar {
       display: flex;
-      align-items: flex-end;
+      align-items: center;
       justify-content: flex-end;
-      height: 30px;
+      height: 40px;
       background-color: $greyish;
 
       .topNavList {
@@ -603,7 +613,7 @@ body {
         .topNavItem {
           text-decoration: none;
           color: $lightGrey;
-          font-size: 15px;
+          font-size: 12px;
           font-weight: 200;
           text-align: center;
 
@@ -659,14 +669,19 @@ body {
       }
 
       .voucher {
-        border: $orangish 3px solid;
+        border: $orangish 4px solid;
         color: $orangish;
-        margin-left: 20px;
+        margin-left: 60px;
+        height: 35px;
+        width: 100px;
+        text-align: center;
 
         a {
           text-decoration: none;
           color: $orangish;
-          font-size: 16px;
+          font-size: 15px;
+          padding: 5px;
+          font-weight: 400;
         }
       }
     }
@@ -686,6 +701,7 @@ body {
           justify-content: center;
           text-align: center;
           max-height: 150px;
+          max-width: 200px;
         }
       }
 
